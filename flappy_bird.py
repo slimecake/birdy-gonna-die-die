@@ -16,6 +16,7 @@ BASE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yu
 BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\bg.png")))
 STAT_FONT = pygame.font.SysFont("comicsans", 50)
 
+# Added a dumb comment, URRRRGGGG I'M SO DUMB
 class Bird:
 	IMGS = BIRD_IMGS
 	MAX_ROTATION = 25
