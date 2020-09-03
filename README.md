@@ -9,4 +9,4 @@ In the script there are some areas which need to be filled in because they are s
 		    pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_3")))
 	]
 
-The image folder is called imgs, to insert the location of the image folder you must locate to it and press the shift key on your keyboard and then right click. Once that is done select copy as path and return back to the script. Once you are in the script delete the part that says "IMAGE_FOLDER" and replace it with the folder path that you just copied. To insert the path press ctrl and v on your keyboard or alternitivly right click and select paste.
+The image folder is called "imgs", to insert the location of the image folder you must locate to it and press the shift key on your keyboard and then right click. Once that is done select copy as path and return back to the script. Once you are in the script delete the part that says "IMAGE_FOLDER" and replace it with the folder path that you just copied. To insert the path press ctrl and v on your keyboard or alternitivly right click and select paste.
