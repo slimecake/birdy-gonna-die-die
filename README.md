@@ -38,7 +38,7 @@ The following variable can be found in the **script** on line **16**
 The image folder is called **imgs**, to insert the location of the image folder you must locate to it and press the **shift key** on your keyboard and then **right click**. Once that is done select **copy as path** and return back to the script. Once you are in the script delete the part that says **IMAGE_FOLDER** and replace it with the folder path that you just copied. To paste the path press **ctrl and v** on your keyboard or alternitivly **right click and select paste**. **BG_IMAGE** is located in the **imgs** folder. do what you did with the **imgs** folder before to **BG_IMAGE**.
 
 ### CONFIG File
-The following variable can be found in the **script** on line **273**
+The following variable can be found in the **script** on line **270**
 
 	config_path = os.path.join(local_dir, r"CONFIG_FILE")
 

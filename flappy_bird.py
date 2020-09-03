@@ -11,12 +11,11 @@ WIN_HEIGHT = 800
 GEN = 0
 
 BIRD_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_1"))), pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_2"))), pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_3")))]
-PIPE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\pipe.png")))
-BASE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\base.png")))
-BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\bg.png")))
+PIPE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"PIPE_IMAGE")))
+BASE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BASE_IMAGE")))
+BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BG_IMAGE")))
 STAT_FONT = pygame.font.SysFont("comicsans", 50)
 
-# Added a dumb comment, URRRRGGGG I'M SO DUMB
 class Bird:
 	IMGS = BIRD_IMGS
 	MAX_ROTATION = 25
@@ -41,14 +40,14 @@ class Bird:
 	def move(self):
 		self.tick_count += 1
 
-		d = self.vel*self.tick_count + 1.5*self.tick_count**2 # how much were moving up or down
+		d = self.vel*self.tick_count + 1.5*self.tick_count**2
 
 		if d >= 16:
 			d = 16
 		if d < 0:
 			d -= 2
 
-		self.y = self.y + d # move slowly up or down
+		self.y = self.y + d
 
 		if d < 0 or self.y < self.height + 50:
 			if self.tilt < self.MAX_ROTATION:
@@ -60,7 +59,6 @@ class Bird:
 	def draw(self, win):
 		self.img_count += 1
 
-		# animate bird
 		if self.img_count < self.ANIMATION_TIME:
 			self.img = self.IMGS[0]
 		elif self.img_count < self.ANIMATION_TIME*2:
@@ -218,7 +216,6 @@ def main(genomes, config):
 			if output[0] > 0.5:
 				bird.jump()
 
-		#bird.move()
 		add_pipe = False
 		rem = []
 		for pipe in pipes:
@@ -270,6 +267,6 @@ def run(config_path):
 
 if __name__ == "__main__":
 	local_dir = os.path.dirname(__file__)
-	config_path = os.path.join(local_dir, r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\neatCONFIG.txt")
+	config_path = os.path.join(local_dir, r"CONFIG_FILE")
 	run(config_path)
 	
