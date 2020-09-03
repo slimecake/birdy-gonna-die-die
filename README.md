@@ -80,4 +80,6 @@ To do this you must make a function called anything you want and **comment out o
 
 Try and figure out if you can get it to work when **space** is pressed instead of **A**
 
-Special thanks to **Tech With Tim**
+
+
+_Special thanks to **Tech With Tim**_
