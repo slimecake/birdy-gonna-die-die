@@ -43,3 +43,19 @@ The following variable can be found in the **script** on line **270**
 	config_path = os.path.join(local_dir, r"CONFIG_FILE")
 
 The config file is called **neatCONFIG.txt**. Replace the **CONFIG_FILE** in the script with the path of the **neatCONFIG.txt**
+
+## Training
+
+Training time can vary from 10 minutes to 10 microseconds. If you want to see the process of its training set the **pop_size** to **5**.
+
+However if you do not want to see how it works and proggresivly gets faster set the **pop_size** to **100**.
+
+	[NEAT]
+	fitness_criterion     = min
+	fitness_threshold     = 500
+	pop_size              = 5
+	reset_on_extinction   = False
+
+Higher the **pop_size** the faster the training.
+
+**pop_size** and other parameters can be changed withing the **neatCONFIG.txt** file.
