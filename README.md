@@ -5,7 +5,7 @@ Python implementation of the game Flappy Bird, played by a neural network
 In the script there are some areas which need to be filled in because they are specific to my file locations, however the script will not run unless they are changed to your specific file locations.
 
 	BIRD_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER",r"BIRD_1"))),
-		pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_2"))),
+			pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_2"))),
 		pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_3")))
 	]
 
