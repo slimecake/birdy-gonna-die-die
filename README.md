@@ -59,3 +59,6 @@ However if you do not want to see how it works and proggresivly gets faster set 
 Higher the **pop_size** the faster the training.
 
 **pop_size** and other parameters can be changed withing the **neatCONFIG.txt** file.
+
+A pop_size of **5** takes roughly **100 generations** until it is a good AI.
+A pop_size of **100** takes roughly **1 generation** until it is a good AI.
