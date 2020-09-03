@@ -10,7 +10,7 @@ WIN_HEIGHT = 800
 
 GEN = 0
 
-BIRD_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\bird1.png"))), pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\bird2.png"))), pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\bird3.png")))]
+BIRD_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_1"))), pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_2"))), pygame.transform.scale2x(pygame.image.load(os.path.join(r"IMAGE_FOLDER", r"BIRD_3")))]
 PIPE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\pipe.png")))
 BASE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\base.png")))
 BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join(r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs", r"C:\Users\yuvvr\OneDrive\Desktop\desktop2\FLAPPYbird\imgs\bg.png")))
