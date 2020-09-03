@@ -65,5 +65,4 @@ A **pop_size** of **100** takes roughly **1 generation** until it is a good AI.
 
 ## How It Works
 The AI works by using a simple **neural network** with **3** inputs (**y_movement**, **height_of_top_pipe**, **height_of_bottom_pipe**) it could theoreticly work with just **2** input but that would require more computer power since the **neural network** would need to calculate the distance between each pipe therefore increasing training times. The **neurel network** only has **1** output, should the bird go **up** or **down**. The bird only needs to move **up** or **down** becasue it **does not** move forward instead the **environment** moves backward.
-![GitHub Logo]("C:\Users\yuvvr\OneDrive\Desktop\VIRUS\simple_neurel.png")
-Format: ![Alt Text](url)
+![simple_neurel](simple_neurel.png)
