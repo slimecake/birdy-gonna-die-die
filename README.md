@@ -67,7 +67,7 @@ A **pop_size** of **100** takes roughly **1 generation** until it is a good AI.
 The AI works by using a simple **neural network** with **3** inputs (**y_movement**, **height_of_top_pipe**, **height_of_bottom_pipe**) it could theoreticly work with just **2** input but that would require more computer power since the **neural network** would need to calculate the distance between each pipe therefore increasing training times. The **neurel network** only has **1** output, should the bird go **up** or **down**. The bird only needs to move **up** or **down** becasue it **does not** move forward instead the **environment** moves backward. The problem with this is that because the **neural network** so simple it can not play the game without dying in the first few seconds. To conquer this what the **script** gradually **adds** or **changes** **layers** and **neurons** it also adjustes the **weights** and **biasses** until you have a **neurel network** that has been perfectly made and with enough **training** would never loose at the game **flappy bird**.
 
 ## Extra Information
-The game and easily be adjusted to be played by a ****human** instead of a **neural network**
+The game and easily be adjusted to be played by a **human** instead of a **neural network**
 
 To do this you must make a function called anything you want and **comment out or delete** all code that relates to the **AI**. In the function you must create an **if statement** that when **space** is clicked call the **jump function**.
 
